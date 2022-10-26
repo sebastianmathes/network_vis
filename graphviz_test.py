@@ -3,7 +3,7 @@
 import graphviz
 import csv
 
-FILENAME="out/list2.csv"
+FILENAME="generators/list2.csv"
 OUTNAME="out/graphviz_out.png"
 
 def read_edges(filename):
@@ -21,8 +21,5 @@ if __name__ == "__main__":
     for edge in edges:
         g.edge(edge[0], edge[1])
 
-    g.render(directory="out").replace("\\", "/")
-
-
-
+    g.render(directory="out")
 
