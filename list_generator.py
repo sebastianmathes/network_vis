@@ -37,7 +37,7 @@ for i in range(0,40):
     if e not in edges:
         edges.append(e)
 
-with open ("list2.csv", "w") as outfile:
+with open ("test/list2.csv", "w") as outfile:
     for edge in edges:
         outfile.write(";".join(edge) + "\n")
 
