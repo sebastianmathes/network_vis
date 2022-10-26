@@ -4,8 +4,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import csv
 
-FILENAME="list2.csv"
-OUTNAME="out2.png"
+FILENAME="test/list2.csv"
+OUTNAME="test/out2.png"
 
 def read_edges(filename):
     edges = []
