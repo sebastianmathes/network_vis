@@ -4,7 +4,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import csv
 
-FILENAME="list.csv"
+FILENAME="list2.csv"
+OUTNAME="out2.png"
 
 def read_edges(filename):
     edges = []
@@ -25,7 +26,7 @@ def add_edges(graph, edge_list):
 
 def print_plot(graph):
     nx.draw(graph, with_labels=True)
-    plt.savefig("out.png")
+    plt.savefig(OUTNAME)
 
 
 if __name__ == "__main__":
